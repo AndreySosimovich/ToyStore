@@ -2,7 +2,7 @@ public class ToyStoreMain implements InputReader {
     public static void main(String[] args) {
         ToyStore toyStore = new ToyStore();
 
-        System.out.println("Добро пожаловать в Игрушечный Магазин!");
+        System.out.println("Добро пожаловать в Магазин игрушек!");
 
         while (true) {
             System.out.println("\nМеню:");
@@ -20,7 +20,7 @@ public class ToyStoreMain implements InputReader {
                     System.out.print("Введите ID игрушки: ");
                     int id = scanner.nextInt();
                     scanner.nextLine(); // Очищаем буфер
-                    System.out.print("Введите название игрушки: ");
+                    System.out.print("Введите название игрушки (на английском языке): ");
                     String name = scanner.nextLine();
                     System.out.print("Введите вероятность выигрыша в процентах: ");
                     int winningProbability = scanner.nextInt();
@@ -35,7 +35,7 @@ public class ToyStoreMain implements InputReader {
                     toyStore.viewToys();
                     break;
                 case 4:
-                    System.out.println("Выход из Игрушечного Магазина. До свидания!");
+                    System.out.println("Выход из Магазина игрушек. До свидания!");
                     System.exit(0);
                 default:
                     System.out.println("Неверный выбор. Пожалуйста, попробуйте снова.");
